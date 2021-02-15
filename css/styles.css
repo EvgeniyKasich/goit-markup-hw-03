@@ -1,0 +1,377 @@
+:root {
+  --main-text-color: rgba(117, 117, 117, 1);
+  --title-text-color: rgba(33, 33, 33, 1);
+  --black-text-color: rgba(0, 0, 0, 1);
+  --white-text-color: rgb(255, 255, 255, 1);
+  --accent-text-color: rgb(33, 150, 243);
+  --footer-address-color: rgba(255, 255, 255, 0.6);
+  --bg-color: rgba(255, 255, 255, 1);
+  --bg-btn-color: rgba(245, 244, 250, 1);
+  --bg-secondary-color: rgba(47, 48, 58, 1);
+  --portfolio-item-gap: 30px;
+}
+
+/* Body */
+body {
+  color: var(--main-text-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Утилиты */
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* header */
+
+.header {
+  background-color: var(--bg-color);
+}
+
+.header .container {
+  min-height: 80px;
+}
+
+.header .container,
+.header-nav,
+.site-nav,
+.site-contact {
+  display: flex;
+  align-items: center;
+}
+
+.header .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.logo {
+  color: var(--black-text-color);
+  font-family: 'Raleway', sans-serif;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-element {
+  color: var(--accent-text-color);
+}
+
+/* site-nav */
+
+.site-nav {
+  margin-left: 93px;
+}
+
+.site-nav .link {
+  color: var(--black-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+
+.site-nav .current {
+  color: var(--accent-text-color);
+}
+
+.site-contact {
+  margin-left: auto;
+}
+
+.site-contact .link {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-contact .link:hover,
+.site-contact .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* hero */
+
+.hero {
+  color: var(--white-text-color);
+  background-color: var(--bg-secondary-color);
+
+  text-align: center;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero .link {
+  color: inherit;
+  background-color: var(--accent-text-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: 1px solid var(--black-text-color);
+}
+
+/* features */
+
+.title {
+  color: var(--title-text-color);
+}
+
+.features .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features .text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.features .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features .item {
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.features .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* skills */
+
+.skills.section {
+  padding-top: 0;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.skills img {
+  display: block;
+}
+
+.skills .list {
+  display: flex;
+}
+
+.skills .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* our team */
+
+.team {
+  background-color: var(--bg-btn-color);
+}
+
+.team img {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.team .list {
+  display: flex;
+  text-align: center;
+}
+
+.team .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team .item {
+  padding-bottom: 30px;
+}
+
+.team-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--bg-secondary-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .logo {
+  color: var(--white-text-color);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.address .link {
+  color: var(--footer-address-color);
+}
+
+.address .link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address .text {
+  margin-top: 0;
+  margin-bottom: 9px;
+
+  color: var(--white-text-color);
+}
+
+/* portfolio */
+
+.portfolio img {
+  display: block;
+}
+
+.portfolio-btn {
+  margin-bottom: 50px;
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-btn .btn-list {
+  border: none;
+
+  color: var(--title-text-color);
+  background-color: var(--bg-btn-color);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.portfolio-btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio .project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--portfolio-item-gap));
+  margin-left: calc(-1 * var(--portfolio-item-gap));
+}
+
+.portfolio .item {
+  flex-basis: calc(100% / 3 - var(--portfolio-item-gap));
+  margin-top: var(--portfolio-item-gap);
+  margin-left: var(--portfolio-item-gap);
+}
+
+.portfolio-btn .btn-list:hover,
+.portfolio-btn .btn-list:focus {
+  background-color: var(--accent-text-color);
+  color: var(--white-text-color);
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
+.projects-title {
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding: 24px 24px 4px 24px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 24px 20px 24px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
